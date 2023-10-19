@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.css">
+    <style>
+        @font-face {
+            font-family: vazir ;
+            src: url(font/vazir-font-v16.1.0/Vazir.woff) format('woff');
+        }
+        body {
+            font-family: vazir;
+        }
+        .container-fluid {
+            background-color: rgb(235, 235, 253);
+            height: 1100px;
+        }
+
+        form {
+            outline: none;
+        }
+        .form-body {
+            margin-top: 10px;
+        }
+        .bg {
+            background-color: white;
+            border:2px solid rgb(255, 51, 85);
+            margin-top: 50px;
+            border-radius: 15px;
+            padding: 40px;
+        }
+        input {
+            background-color: rgb(238, 238, 238) !important;
+            border: 1px solid rgb(192, 192, 192) !important;
+        }
+        textarea {
+            outline: none;
+            background-color: rgb(238, 238, 238) !important;
+            border: 1px solid rgb(192, 192, 192) !important;
+            border-radius: 7px;
+        }
+        .button-shade {
+            position: relative;
+            height: 40px;
+        }
+        .button {
+          width: 90px;
+          position: absolute;
+          left: 10px;
+          background-color: rgb(255, 51, 85);
+            border:1px solid rgb(255, 51, 85);
+        }
+        .button:hover {
+            background-color: rgb(255, 51, 85);  
+            border:1px solid rgb(255, 51, 85);
+        }
+    </style>
+    <title>Exam 2</title>
+</head>
+
+<body dir="rtl">
+    <div class="container-fluid">
+        <div class="container w-50">
+            <div class="row">
+                <div class="col-12 bg">
+                    <div class="mb-3 col-12 row">
+                        <div class="form-header mb-4">  
+                            <h3>فرم ثبت نام</h3>
+                        </div>
+                        <div class="form-body row">
+                            <form action="#" class="col-12 col-lg-6">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">نام کامل</label>
+                                    <input type="text" name="name" id="name" class="form-control" placeholder="" aria-describedby="helpId">
+                                  </div>
+                            </form>
+                            <form action="#" class="col-12 col-lg-6">
+                                <div class="mb-3">
+                                    <label for="phone" class="form-label">شماره تماس</label>
+                                    <input type="number" name="number" id="phone" class="form-control" placeholder="" aria-describedby="helpId">
+                                  </div>
+                            </form>
+                            <form action="#" class="col-12">
+                                <div class="mb-3">
+                                    <label for="title" class="form-label">عنوان</label>
+                                    <input type="text" name="title" id="title" class="form-control" placeholder="" aria-describedby="helpId">
+                                  </div>
+                            </form>
+                            <form action="#" class="col-12">
+                                <div class="mb-3">
+                                    <label for="massage" class="form-label">پیام</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="9"></textarea>
+                                </div>
+                            </form>
+                           <div class="button-shade">
+                            <a href="#" class="button mt-4 btn btn-success">ثبت</a>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
